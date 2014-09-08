@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Toys R Us</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootswatch.less" type="text/css" />
+    <link rel="stylesheet" href="css/variables.less" type="text/css" />
+    <style type="text/css">
+		.web_link
+		{
+			font-weight:bold;
+		}
+		
+		.footer_link {
+			color:#FFFFFF;	
+			text-decoration:none;
+		}
+		
+		a.footer_link:hover  {
+			color:#F60;
+			text-decoration:none;
+		}
+
+		a.footer_link:visited  {
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		
+		a.footer_link:active  {
+			color:#FFFFFF;
+			text-decoration:none;
+		}
+		
+
+	</style>
+</head>
+
+<body onLoad="displayPageContent('home');">
+	<div class="container">
+        <header>
+            <div style="color:#0059B3">
+                <h1>Toys R Us</h1>
+            </div>
+        </header>
+<!--        
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+--> 
+		<div style="border:1px solid #007FFF">
+			<div class="navbar navbar-inverse">
+			  <div class="navbar-collapse collapse navbar-inverse-collapse">
+				<ul class="nav navbar-nav">
+				  <li><a href="Javascript:void(0);" onClick="displayPageContent('home');" class="web_link">Home</a></li>
+				  <li><a href="Javascript:void(0);" onClick="displayPageContent('about');" class="web_link">About</a></li>
+				  <li><a href="Javascript:void(0);" onClick="displayPageContent('products');" class="web_link">Products</a></li>
+				  <!--<li><a href="Javascript:void(0);" onClick="displayPageContent('services');" class="web_link">Services</a></li>-->
+				  <li><a href="Javascript:void(0);" onClick="displayPageContent('contact');" class="web_link">Contact</a></li>
+				</ul>
+			  </div>
+			</div>     
+        
+        <!--<div class="container-fluid" style="border:1px solid">-->
+            <div id="body_content_div">
+
+            </div>
+        <!--</div>-->
+        	<div align="center">
+            	<p style="color:red; font-weight:bold">
+                	Note: This is just a practice site created by author.
+                	All images are copyright products of ToysRUs and must not be used for commercial purposes.
+                </p>
+            </div>
+		</div>
+        <footer>
+			<!--
+        	<div align="center">
+        		<p>&copy; Simplex 2014. All rights reserved. Created by Farrukh Afzaal Kurd</p>
+        	</div>
+			-->
+			<div align="center" style="vertical-align:middle">
+				<div class="panel panel-primary">
+				  <div class="panel-heading">
+					<h3 class="panel-title">
+						<p>Toys R Us &copy; 2014. All rights reserved. Created by <a class="footer_link" target="_blank" href="http://careers.stackoverflow.com/farrukhafzaal">Farrukh Afzaal Kurd</a></p>
+					</h3>
+				  </div>
+				</div>			
+			</div>
+      </footer>
+    </div>
+	<script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+		function displayPageContent(webPageName) {
+			var pageContent = '';
+			if(webPageName != "" && webPageName != null) {
+				if(webPageName == "home"){
+					pageContent  = '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="jumbotron" style="width:95%"> ';
+					pageContent += '		<h1>Deals of the week</h1> ';
+					pageContent += '		<p>Save on outdoor play, electronics, video games, action figures & more!</p> ';
+					pageContent += '		<p> ';
+					pageContent += '			<a id="jumbotron_link" class="btn btn-primary btn-lg" href="Javascript:void(0);">Learn more</a> ';
+					pageContent += '		</p> ';
+					pageContent += '	</div> ';
+					pageContent += '</div> ';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '    	<div class="panel-heading"> ';
+                    pageContent += '    	    <h3 class="panel-title">Introduction</h3> ';
+                    pageContent += '    	</div> ';
+                    pageContent += '    	<div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Nam vitae rhoncus risus, nec ornare ipsum. Mauris eu leo semper, molestie enim vel, luctus eros. Proin luctus convallis velit, eu sagittis lectus ullamcorper id. Quisque nec turpis eleifend, sodales felis sit amet, accumsan dolor. Aenean ligula orci, convallis et laoreet eget, mollis id dui. Maecenas sollicitudin vel risus a rhoncus. Nullam consectetur vitae mi sed hendrerit. Aliquam ipsum libero, fermentum eget quam lobortis, posuere fringilla arcu. Integer blandit consequat velit, quis vulputate arcu imperdiet vel. Etiam a lobortis dui. Nunc sit amet iaculis est. Fusce arcu est, tristique ut tincidunt nec, laoreet eu urna. Duis libero augue, tincidunt pharetra commodo ut, tincidunt eu metus. Fusce non nisl eget diam laoreet fringilla a id tellus. Vestibulum malesuada tellus non mauris dictum lacinia.';
+					pageContent += '			</p> ';
+                    pageContent += '    	</div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '	    <div class="panel-heading"> ';
+                    pageContent += '	        <h3 class="panel-title">Strategy</h3> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	    <div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Vestibulum consequat luctus ipsum, vitae sodales justo rutrum a. Donec nibh magna, egestas vitae pharetra et, rhoncus sit amet lectus. Aliquam ac quam et dolor luctus feugiat. Ut tincidunt enim felis, eget tempus arcu tempus sit amet. Morbi sit amet cursus ligula. In eleifend accumsan ornare. Ut dui est, ultrices vel ullamcorper ac, venenatis et diam. Mauris velit sem, condimentum a sapien vel, pretium accumsan enim. Pellentesque placerat mi vitae dictum molestie. Nam eu mauris non massa pulvinar ullamcorper et quis ipsum. Nullam sapien velit, porttitor sit amet urna non, dignissim luctus mi. Sed cursus congue arcu. Curabitur ornare volutpat vestibulum. Aliquam non elit et magna porta ultricies et in tortor. Vestibulum ante diam, mattis vitae fringilla in, rhoncus nec lacus. Fusce ipsum quam, malesuada vitae dapibus eget, rutrum a mi..';
+					pageContent += '			</p> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '	    <div class="panel-heading"> ';
+                    pageContent += '	        <h3 class="panel-title">Future Goals</h3> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	    <div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Pellentesque tincidunt mollis ultricies. Aenean bibendum, velit eget ultrices lobortis, massa nisi consectetur est, eget congue sem nibh vitae purus. Sed vulputate consectetur neque vel lacinia. Donec varius eros velit, in porta ante tempus vel. Integer vitae mollis mi. Duis quis eros ornare, sodales orci sed, porttitor justo. Fusce eu purus vitae neque sodales ultrices eu at dui. Donec ut facilisis arcu. Nunc ultrices rhoncus leo, eget adipiscing massa ultricies at. Maecenas placerat, nibh quis pellentesque faucibus, magna arcu blandit nisi, ut venenatis dolor nisl vitae odio..';
+					pageContent += '			</p> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+				}
+                else if(webPageName == "about"){
+					pageContent  = '<div style="margin-left:4%"> ';
+					pageContent += '<h2 style="color:#007FFF">About</h2> ';
+					pageContent += '</div';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '    	<div class="panel-heading"> ';
+                    pageContent += '    	    <h3 class="panel-title">Company Profile</h3> ';
+                    pageContent += '    	</div> ';
+                    pageContent += '    	<div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Phasellus vel odio id urna placerat consequat non a elit. Nullam gravida malesuada odio, sit amet tincidunt urna elementum vel. Vestibulum non eleifend arcu. Donec neque augue, molestie in odio mollis, scelerisque venenatis felis. Praesent id risus metus. Vivamus justo mauris, gravida eget cursus sed, vulputate quis magna. Morbi quis volutpat felis, at varius lacus. Ut tristique, enim molestie ullamcorper tristique, nulla sapien ornare enim, nec interdum nisl nulla sed nunc. Pellentesque consequat mi et tincidunt volutpat. Praesent malesuada magna malesuada feugiat adipiscing. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget rhoncus nisi, imperdiet aliquam ipsum. Etiam massa tortor, ultricies ac sapien non, aliquam accumsan dolor. Nunc mollis id diam sed vestibulum. Sed scelerisque condimentum erat, in porttitor dolor..';
+					pageContent += '			</p> ';
+                    pageContent += '    	</div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '	    <div class="panel-heading"> ';
+                    pageContent += '	        <h3 class="panel-title">Business Strategy</h3> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	    <div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Morbi in pretium lacus. Phasellus egestas iaculis arcu, nec condimentum augue condimentum non. Nunc et neque suscipit, sagittis nisl ac, dapibus urna. Mauris elementum tellus quis libero aliquet, in molestie lacus pretium. Phasellus mollis odio lobortis eros ultrices, id scelerisque lorem vulputate. Etiam vehicula neque sit amet massa faucibus rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi tristique libero enim, sit amet sodales nibh interdum nec. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi et nisl metus. Nulla facilisi. Nam et quam tristique massa tempus posuere sed et velit. Morbi at enim elit. Donec a eleifend leo. In quis ante sodales, sodales leo et, commodo metus. Aliquam elementum ultricies interdum.';
+					pageContent += '			</p> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '	<div class="panel panel-primary" style="width:95%"> ';
+                    pageContent += '	    <div class="panel-heading"> ';
+                    pageContent += '	        <h3 class="panel-title">Customer Relationship</h3> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	    <div class="panel-body"> ';
+                    pageContent += '			<p> ';
+					pageContent += '			 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed nulla lacus, posuere et lacus id, interdum luctus tellus. Sed eu ligula eu enim consequat convallis. Nunc volutpat est eu magna fermentum, ac ultricies augue lobortis. Vestibulum dignissim metus id dui pretium, ut tincidunt neque tincidunt. Nulla egestas in justo ut dictum. Donec vulputate neque ante, nec tristique lectus elementum at. Aenean aliquam fermentum augue a placerat. Ut eget nisi vehicula, sollicitudin dolor sit amet, volutpat mauris. Duis molestie semper odio. In diam nulla, semper eu porta et, auctor eu augue. Proin sodales ipsum at hendrerit consequat. Vivamus consectetur nunc eget nisi tristique aliquet. Mauris fringilla nisl sed sem faucibus vestibulum. Nunc laoreet ipsum sit amet orci mollis scelerisque. In feugiat dictum luctus.';
+					pageContent += '			</p> ';
+                    pageContent += '	    </div> ';
+                    pageContent += '	</div> ';
+					pageContent += '</div> ';
+                }
+				else if(webPageName == "products"){
+					pageContent  = '<div style="margin-left:4%"> ';
+					pageContent += '<h2 style="color:#007FFF">Products</h2> ';
+					pageContent += '</div';
+					pageContent += '<div style="margin-left:4%"> ';
+					pageContent += '<table cellpadding="0px" cellspacing="3%" width="95%" border="0">';
+					pageContent += '	<tr>';
+					pageContent += '		<td>';
+					pageContent += '			';
+					pageContent += '		</td>';
+					pageContent += '	</tr>';
+					pageContent += '</table>';
+					pageContent += '</div>';
+					pageContent  = '<div style="margin-left:4%"> ';
+					pageContent += '	<table cellpadding="0px" cellspacing="0" width="95%" border="0"> ';
+					pageContent += '		<tr> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Action Figures</div> ';
+					pageContent += '						<div class="panel-body" align="center"> ';
+					pageContent += '							<img src="img/action-figure1.jpg" alt="Action Figures Image" width="95%" height="95%"	/> ';
+					pageContent += '						</div> ';
+					pageContent += '						<div class="panel-footer">Panel footer</div> ';
+					pageContent += '					</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Back to School</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/pretendnplay.jpg" alt="Back to School Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '				<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Bikes, Scooters, Ride-Ons</div> ';
+					pageContent += '						<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/bikes-scooters-rideons.jpg" alt="Bikes, Scooters, Ride-Ons Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Building Sets &amp; Blocks</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/lego-toy-story-3-garbage-truck-getaway.jpg" alt="Building Sets and Blocks Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '		</tr> ';
+					pageContent += '		<tr> ';
+					pageContent += '			<td colspan="4">&nbsp;</td> ';
+					pageContent += '		</tr> ';
+					pageContent += '		<tr> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Dolls, Stuffed Animals</div> ';
+					pageContent += '						<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/stuffed-animals.jpg" alt="Dolls, Stuffed Animals Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Electronics</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/electronic-toys.jpg" alt="Electronics Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Games, Puzzles</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/games-puzzle-toys.jpg" alt="Games, Puzzles Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Outdoor Play</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/outdoorplay-toys1.jpg" alt="Outdoor Play Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '		</tr> ';
+					pageContent += '		<tr> ';
+					pageContent += '			<td colspan="4">&nbsp;</td> ';
+					pageContent += '		</tr> ';
+					pageContent += '		<tr> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Pools, Water Toys</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/pool-toys1.jpg" alt="Pools, Water Toys Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '			<td width="22%"> ';
+					pageContent += '				<div class="panel panel-default"> ';
+					pageContent += '					<div class="panel-heading" align="center" style="font-weight:bold">Video Games</div> ';
+					pageContent += '					<div class="panel-body" align="center"> ';
+					pageContent += '						<img src="img/video-games-toys.jpg" alt="Video Games Image" width="95%" height="95%"	/> ';
+					pageContent += '					</div> ';
+					pageContent += '					<div class="panel-footer">Panel footer</div> ';
+					pageContent += '				</div> ';
+					pageContent += '			</td> ';
+					pageContent += '			<td>&nbsp;</td> ';
+					pageContent += '		</tr> ';
+					pageContent += '	</table> ';
+					pageContent += '</div> ';
+					
+				}
+				else if(webPageName == "services"){
+
+				}
+                else if(webPageName == "contact"){
+					pageContent  = '<div style="margin-left:4%"> ';
+					pageContent += '<table cellpadding="0px" cellspacing="0px" width="100%" border="0">';
+					pageContent += '<tr> ';
+					pageContent += '<td style="width:80%"> ';
+                    pageContent += '	<form class="form-horizontal" style="width:60%"> ';
+                    pageContent += '  		<fieldset> ';
+                    pageContent += '			<legend><h2 style="color:#007FFF">Contact</h2></legend> ';
+                    pageContent += '				<div class="form-group"> ';
+                    pageContent += '				  <label for="inputName" class="col-lg-2 control-label">Name</label> ';
+                    pageContent += '				  <div class="col-lg-10"> ';
+                    pageContent += '					<input type="text" class="form-control" id="inputName" placeholder="Name"> ';
+                    pageContent += '				  </div> ';
+                    pageContent += '				</div> ';
+                    pageContent += '				<div class="form-group"> ';
+                    pageContent += '	  				<label for="inputEmail" class="col-lg-2 control-label">Email</label> ';
+                    pageContent += '	  				<div class="col-lg-10"> ';
+                    pageContent += '						<input type="text" class="form-control" id="inputEmail" placeholder="Subject"> ';
+                    pageContent += '	  				</div> ';
+                    pageContent += '				</div> ';
+                    pageContent += '				<div class="form-group"> ';
+                    pageContent += '	  				<label for="inputSubject" class="col-lg-2 control-label">Subject</label> ';
+                    pageContent += '	  				<div class="col-lg-10"> ';
+                    pageContent += '						<input type="text" class="form-control" id="inputSubject" placeholder="Subject"> ';
+                    pageContent += '	  				</div> ';
+                    pageContent += '				</div> ';
+                    pageContent += '				<div class="form-group"> ';
+                    pageContent += '	  				<label for="textArea" class="col-lg-2 control-label">Remarks</label> ';
+                    pageContent += '	  				<div class="col-lg-10"> ';
+                    pageContent += '						<textarea class="form-control" rows="3" id="textArea"></textarea> ';
+                    pageContent += '						<span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span> ';
+                    pageContent += '					</div> ';
+                    pageContent += '				</div> ';
+                    pageContent += '				<div class="form-group"> ';
+                    pageContent += '					<div class="col-lg-10 col-lg-offset-2"> ';
+                    pageContent += '						<button class="btn btn-default">Cancel</button> ';
+                    pageContent += '						<button type="submit" class="btn btn-primary">Submit</button> ';
+                    pageContent += '	  				</div> ';
+                    pageContent += '				</div> ';
+                    pageContent += '  		</fieldset> ';
+                    pageContent += '	</form> ';					
+					pageContent += '</td> ';
+					pageContent += '<td> ';
+					pageContent += '</td> ';
+					pageContent += '</tr> ';
+					pageContent += '</table> ';
+
+					pageContent += '</div> ';
+                }
+			}
+			var bodyContentDiv = document.getElementById("body_content_div");
+			bodyContentDiv.innerHTML = pageContent;
+		}
+		
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>
